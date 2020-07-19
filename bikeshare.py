@@ -6,7 +6,7 @@ from statistics import mode
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-# choice class is defined to include the data from the user in the form of choices to laid him towards required data
+# choice class is defined to include the data from the user in the form of different choices to direct him towards required data
 def choice(prompt, choices=('y', 'n')):
     """Return a valid input from the user given an array of possible answers.
     """
@@ -137,8 +137,6 @@ def station_stats(df):
     print('\nThe most frequent start and end station is : {}\n'.format(df['trip_combination'].mode()[0]))
 
     print ("The station_stats is printed successfully")
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
 
 # Trip duration stats will display the total time of travel as well as mean travel time
 def trip_duration_stats(df):
