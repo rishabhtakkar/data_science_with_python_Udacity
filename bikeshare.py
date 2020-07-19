@@ -135,7 +135,7 @@ def station_stats(df):
     # TO DO: display most frequent combination of start station and end station trip
     df['trip_combination'] = df['Start Station'] + ' to ' + df['End Station']
     print('\nThe most frequent start and end station is : {}\n'.format(df['trip_combination'].mode()[0]))
-
+	# Displays the time taken to print out the information.
     print ("The station_stats is printed successfully")
 
 # Trip duration stats will display the total time of travel as well as mean travel time
